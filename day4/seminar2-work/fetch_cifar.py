@@ -11,7 +11,7 @@ def onehot(y, n_classes=10):
 def unpickle(file):
     import pickle
     with open(file, 'rb') as fo:
-        dict = pickle.load(fo, encoding='bytes')
+        dict = pickle.load(fo)
     return dict
 
 def fetch_cifar_dataset(cifar_folder='cifar-10-batches-py', channel_last=True):
